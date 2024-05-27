@@ -1,4 +1,4 @@
-class book():
+class Book():
     title = None
     price = None
     price_with_rate = None
