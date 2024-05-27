@@ -11,3 +11,6 @@ def get_driver() -> webdriver.Chrome:
 if __name__ == '__main__':
     driver = get_driver()
     bot = BookBot(driver)
+    
+    while(bot.has_more_pages):
+        bot.scrape()
